@@ -35,6 +35,15 @@ h2 {
   font-weight: 300;
   margin-bottom: 40px;
 }
+
+.btn-primary   {
+  /* 10% lighter than the ohtech dark gray*/
+  background-color: #6c696a !important;
+  border-color: rgb(82, 80, 81) !important;
+}
+.btn-primary:hover {
+  background-color: rgb(82, 80, 81) !important;
+}
 </style>
 </head>
 
