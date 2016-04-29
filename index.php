@@ -63,7 +63,7 @@ h2 {
 
 
 <div class="container">
-<h2>Login to OSC OnDemand using Open ID Connect</h2>
+<h2>Login to OSC OnDemand</h2>
 
 
 <div class="row">
