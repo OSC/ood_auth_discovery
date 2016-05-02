@@ -71,19 +71,19 @@ h2 {
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <h4 style="text-align: center;">Step 1. Choose your identity provider<br><small>CILogon provides access to identity providers from many academic institutions across the state.</small></h4>
-      <img class="img-rounded" alt="100%x200" src="img/login1.png" style="display: block;">
+      <img class="img-rounded img-responsive" alt="100%x200" src="img/login1.png" style="display: block;">
     </div>
   </div>
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <h4 style="text-align: center;">Step 2. Login via your provider<br><small>For example, here I've chosen Ohio State University as my provider and am presented OSU's login page.</small></h4>
-      <img class="img-rounded" data-src="holder.js/100%x200" alt="100%x200" src="img/login2.png" style="display: block;">
+      <img class="img-rounded img-responsive" data-src="holder.js/100%x200" alt="100%x200" src="img/login2.png" style="display: block;">
     </div>
   </div>
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <h4 style="text-align: center;">Step 3. Map it to your OSC account<br><small>If it is the first time logging in with this provider, you will need to associate it with your OSC account.</small></h4>
-      <img class="img-rounded" data-src="holder.js/100%x200" alt="100%x200" src="img/login3.png" style="display: block;">
+      <img class="img-rounded img-responsive" data-src="holder.js/100%x200" alt="100%x200" src="img/login3.png" style="display: block;">
     </div>
   </div>
 </div>
