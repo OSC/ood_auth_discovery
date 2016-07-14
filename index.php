@@ -82,7 +82,9 @@ h2 {
   </div>
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <h4 style="text-align: center;">Step 3. Map it to your OSC account<br><small>If it is the first time logging in with this provider, you will need to associate it with your OSC account.</small></h4>
+      <h4 style="text-align: center;">Step 3. Map it to your HPC account<br>
+        <small>If it is the first time logging in with this provider, you will need to associate it with your HPC account.</small>
+      </h4>
       <img class="img-rounded img-responsive" data-src="holder.js/100%x200" alt="100%x200" src="img/login3.png" style="display: block;">
     </div>
   </div>
