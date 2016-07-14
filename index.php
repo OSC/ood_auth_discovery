@@ -4,6 +4,9 @@
 
 <?php
 include('config.php');
+
+// delete the cookie that proxy sets for the cache hint for mapping oidc to username
+setcookie('mod_ood_proxy_session', '', time() - 86400*2, "/");
 ?>
 
 <head>
