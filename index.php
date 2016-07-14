@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+<?php
+include('config.php');
+?>
+
 <head>
   <title>OnDemand | Discovery</title>
   <meta charset="utf-8">
@@ -11,12 +16,12 @@
 
 <style type="text/css">
 .navbar-brand {
-  color: white !important;
+  color: <?= $config->nav_brand_text_color ?> !important;
 }
 
 .navbar.navbar-inverse {
-  background-color: #cf102d !important;
-  border-color: #a00c23 !important;
+  background-color: <?= $config->nav_background_color ?> !important;
+  border-color: <?= $config->nav_background_color ?> !important;
 }
 
 body {
@@ -55,7 +60,7 @@ h2 {
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">OSC OnDemand</a>
+      <a class="navbar-brand" href="#"><?= $config->title ?></a>
     </div>
   </div><!-- /.navbar-collapse -->
 </nav>
@@ -64,7 +69,7 @@ h2 {
 
 
 <div class="container">
-<h2>Login to OSC OnDemand</h2>
+<h2>Login to <?= $config->title ?></h2>
 
 
 <div class="row">
