@@ -108,11 +108,17 @@ h2 {
 
 
   $cilogon_url = htmlspecialchars($oidc_callback . "?iss=" . urlencode($issuer) . "&target_link_uri=" . urlencode($target_link_uri) . "&x_csrf=" . urlencode($csrf));
+  $osc_url     = htmlspecialchars($oidc_callback . "?iss=" . urlencode('https://idp-dev.osc.edu/auth/realms/osc') . "&target_link_uri=" . urlencode($target_link_uri) . "&x_csrf=" . urlencode($csrf));
 ?>
 
 <div class="row">
   <p style="text-align: center;">
     <a class="btn btn-primary btn-lg" href="<?= $cilogon_url ?>">Login via CILogon</a>
+  </p>
+</div>
+<div class="row">
+  <p style="text-align: center;">
+    <a class="btn btn-primary btn-lg" href="<?= $osc_url ?>">Login via OSC</a>
   </p>
 </div>
 
