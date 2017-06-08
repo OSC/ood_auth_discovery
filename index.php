@@ -100,14 +100,12 @@ h2 {
 
 
 <?php
-  $issuer = 'https://cilogon.org';
-
   $oidc_callback = $_GET['oidc_callback'];
   $target_link_uri = $_GET['target_link_uri'];
   $csrf = $_GET['x_csrf'];
 
 
-  $cilogon_url = htmlspecialchars($oidc_callback . "?iss=" . urlencode($issuer) . "&target_link_uri=" . urlencode($target_link_uri) . "&x_csrf=" . urlencode($csrf));
+  $cilogon_url = htmlspecialchars($oidc_callback . "?iss=" . urlencode('https://cilogon.org') . "&target_link_uri=" . urlencode($target_link_uri) . "&x_csrf=" . urlencode($csrf));
   $osc_url     = htmlspecialchars($oidc_callback . "?iss=" . urlencode('https://idp-dev.osc.edu/auth/realms/osc') . "&target_link_uri=" . urlencode($target_link_uri) . "&x_csrf=" . urlencode($csrf));
 ?>
 
