@@ -89,7 +89,9 @@ h2 {
       <div class="row">
         <div class="col-sm-12 col-md-12">
           <div class="thumbnail">
-            <h4 style="text-align: center;">Step 1. Login with your OSC account</h4>
+            <h4 style="text-align: center;">Step 1. Login with your OSC account<br>
+              <small>Authenticate with OSC's Open ID Connect server.</small>
+            </h4>
             <img class="img-rounded img-responsive center-block" data-src="holder.js/100%x200" alt="100%x200" src="img/login1-osc-ldap.png">
           </div>
         </div>
