@@ -32,7 +32,7 @@ body {
 }
 
 .thumbnail h4{
-  min-height: 80px;
+  min-height: 56px;
 }
 
 div.row {
