@@ -4,6 +4,7 @@
 
 <?php
 include('config.php');
+include('functions.php');
 
 // delete the cookie that proxy sets for the cache hint for mapping oidc to username
 setcookie('mod_ood_proxy_session', '', time() - 86400*2, "/");
@@ -65,9 +66,16 @@ h2 {
   $target_link_uri = $_GET['target_link_uri'];
   $csrf = $_GET['x_csrf'];
 
+  $cilogon_base_url = 'https://cilogon.org';
 
-  $cilogon_url = htmlspecialchars($oidc_callback . "?iss=" . urlencode('https://cilogon.org') . "&target_link_uri=" . urlencode($target_link_uri) . "&x_csrf=" . urlencode($csrf));
-  $osc_url     = htmlspecialchars($oidc_callback . "?iss=" . urlencode('https://idp-dev.osc.edu/auth/realms/osc') . "&target_link_uri=" . urlencode($target_link_uri) . "&x_csrf=" . urlencode($csrf));
+  $osc_base_url = fetch(array(
+    'webdev02.hpc.osc.edu' => 'https://idp-dev.osc.edu/auth/realms/osc',
+    'webtest02.hpc.osc.edu' => 'https://idp-test.osc.edu/auth/realms/osc',
+  ), gethostname(), 'https://idp.osc.edu/auth/realms/osc');
+
+
+  $cilogon_url = htmlspecialchars($oidc_callback . "?iss=" . urlencode($cilogon_base_url) . "&target_link_uri=" . urlencode($target_link_uri) . "&x_csrf=" . urlencode($csrf));
+  $osc_url     = htmlspecialchars($oidc_callback . "?iss=" . urlencode($osc_base_url) . "&target_link_uri=" . urlencode($target_link_uri) . "&x_csrf=" . urlencode($csrf));
 ?>
 
 
