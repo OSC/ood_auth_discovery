@@ -85,7 +85,10 @@ h2 {
     <h2>Login to <?= $config->title ?></h2>
     <p class="lead" style="text-align: center;">Log in with either your
       <a href="<?= $osc_url ?>">OSC Account</a> or a
-      <a href="<?= $cilogon_url ?>">third party account via CILogon</a>.</p>
+      <a href="<?= $cilogon_url ?>">third party account via CILogon</a>.<br>
+      If you don't have an OSC Account,
+      <a href="https://www.osc.edu/resources/getting_started/allocations_and_accounts">register for one here</a>.
+    </p>
   </div>
 
   <div class="row">
