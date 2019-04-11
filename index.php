@@ -87,7 +87,7 @@ h2 {
       <a href="<?= $osc_url ?>">OSC Account</a> or a
       <a href="<?= $cilogon_url ?>">third party account via CILogon</a>.<br>
       If you don't have an OSC Account,
-      <a href="https://www.osc.edu/resources/getting_started/allocations_and_accounts">register for one here</a>.
+      <a href="https://www.osc.edu/supercomputing/accounts">register for one here</a>.
     </p>
   </div>
 
